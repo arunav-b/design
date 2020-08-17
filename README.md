@@ -164,7 +164,7 @@ Good fit for business logic implemented using domain model pattern. The core goa
 		
 ## Event Storming:
 Below are the steps for event storming -
-1. **Exploring**: Unstructured exploration of domain events in past tense.
+1. **Exploring Events**: Unstructured exploration of domain events in past tense.
 2. **Timelines**: Order the domain events chronologically.
 3. **Commands**: Model commands that caused the domain events. A single command might trigger multiple domain events. The domain events triggered might be in parallel or sequential.
 4. **Policies**: Look out for automated policies that trigger commands, there might not be specific actors to trigger the command.

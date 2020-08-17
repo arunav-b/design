@@ -45,15 +45,15 @@ Integration of multiple bounded-contexts, i.e., how one bounded context maps to 
 
 #### Kinds of context-mapping: 
 				
-                                                    Context Mapping
-                                                           |
-                               +---------------------------------------------------------------+
-                              |                           |                  |                 |
-                          Cooperation            Customer-Supplier    Separate Ways     Big Ball of Mud
-                              |						      |
-                        +--------------+            +----------------------------------------+
-                        |              |            |                     |                  |
-                  Partnership  Shared Kernel   Conformist     Anti-Corruption Layer   Open Host Service 	
+                                      Context Mapping
+                                             |
+                +---------------------------------------------------------------+
+                |                           |                  |                |
+           Cooperation            Customer-Supplier    Separate Ways     Big Ball of Mud
+                |                           |
+         +--------------+            +----------------------------------------+
+         |              |            |                     |                  |
+    Partnership  Shared Kernel   Conformist     Anti-Corruption Layer   Open Host Service 	
 
 #### 1. Cooperation:
     Cooperation patterns relate to bounded contexts implemented by teams with well-established communication. It applies to teams that have dependent goals, where the success of one team depends on the other’s and vice versa. These are of two types -
@@ -75,9 +75,8 @@ Integration of multiple bounded-contexts, i.e., how one bounded context maps to 
 #### 4. Big Ball of Mud:
     Building all the bounded contexts as a part of one single application. Ex - Legacy systems.
 
-<br/> 
 				
-#### Integration Types:
+#### Types of Integrations:
 - RPC with SOAP
 - Restful HTTP 
 - Messaging

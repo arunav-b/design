@@ -163,6 +163,8 @@ Good fit for business logic implemented using domain model pattern. The core goa
 <br/>
 		
 ## Event Storming:
+> Event storming is a modeling workshop that brings together the core aspects of DDD for exploring business domains, gather knowledge, and lay the foundations for a ubiquitous language. Anyone related to the business domain can participate in event storming including engineers, domain experts, product owners, testers, UI/UX designers, support personnel, etc. The more people with differing backgrounds are involved, the more knowledge will be discovered.
+
 Below are the steps for event storming -
 1. **Exploring Events**: Unstructured exploration of domain events in past tense.
 2. **Timelines**: Order the domain events chronologically.

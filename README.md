@@ -17,13 +17,13 @@ Strategic design can be broken into following steps:
 Some key concepts in Strategic Design -
 
 ### Ubiquitous Language: 
-A common language used by developers and the domain experts to refer to different parts of the business.
+> A common language used by developers and the domain experts to refer to different parts of the business.
 
 ### Bounded Context:
-Bounded Context is a semantic contextual boundary, within which each component of the software model has a specific meaning and does specific things.
+> Bounded Context is a semantic contextual boundary, within which each component of the software model has a specific meaning and does specific things.
 			
 ### Subdomains:
-Subdomain is a sub-part of your overall business domain, which are discovered during the analysis phase.
+> Subdomain is a sub-part of your overall business domain, which are discovered during the analysis phase.
 
 #### Types of Subdomains:
 
@@ -41,7 +41,7 @@ Subdomain is a sub-part of your overall business domain, which are discovered du
 > - Choosing model boundaries (bounded-contexts) is a strategic design decision. We decide how to divide the business domain into smaller, manageable problem domains.
 
 ### Context Mapping:
-Integration of multiple bounded-contexts, i.e., how one bounded context maps to another bounded context. 
+> Integration of multiple bounded-contexts, i.e., how one bounded context maps to another bounded context. 
 
 #### Kinds of context-mapping: 
 				

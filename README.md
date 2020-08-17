@@ -56,13 +56,13 @@ Integration of multiple bounded-contexts, i.e., how one bounded context maps to 
     Partnership  Shared Kernel   Conformist     Anti-Corruption Layer   Open Host Service 	
 
 #### 1. Cooperation:
-    Cooperation patterns relate to bounded contexts implemented by teams with well-established communication. It applies to teams that have dependent goals, where the success of one team depends on the other’s and vice versa. These are of two types -
+> Cooperation patterns relate to bounded contexts implemented by teams with well-established communication. It applies to teams that have dependent goals, where the success of one team depends on the other’s and vice versa. These are of two types -
 - **Partnership:** In a partnership between 2 teams, each team is responsible for one Bounded-Context, each having a dependent set of goals. There is a commitment required between the two teams and they will succeed or fail together. Bounded contexts are integrated in an ad hoc manner.
 
 - **Shared Kernel:** A relationship with 2 teams, where they share a small but common model. The shared kernel is both referenced and owned by multiple bounded contexts. It is difficult to maintain. A shared kernel is a natural fit for integrating bounded contexts that are owned and implemented by the same team.
 					
 #### 2. Customer-Supplier:
-    Here one bounded-context is a supplier (upstream) of services and the other one being a consumer (downstream). Unlike in the cooperation case, both teams (upstream and downstream) can succeed independently. These can be broadly classified as -
+> Here one bounded-context is a supplier (upstream) of services and the other one being a consumer (downstream). Unlike in the cooperation case, both teams (upstream and downstream) can succeed independently. These can be broadly classified as -
 - **Conformist:** Here in a supplier-consumer relationship, the supplier simply supplies information/data to downstream teams without much motivation on what the downstream team needs. The donwstream team conforms to the upstream model. Eg - Industry-standard or well-established model that doesn't change frequently.
 
 - **Anticorruption Layer:** The downstream creates a translation layer between its Ubiquitous Language and the Ubiquitous Language of upstream. The layer isolates the downstream model from the upstream model and translates between the two. Eg - Legacy-Bridge - Consumer protects itself from frequent changes by supplier's contract.
@@ -70,10 +70,10 @@ Integration of multiple bounded-contexts, i.e., how one bounded context maps to 
 - **Open Host Service:** An Open Host Service defines a protocol or interface that gives access to the underlying Bounded Context as a set of services. The protocol is "open" hence allowing to integrate with other Bounded Contexts with relative ease. Supplier's public interface doesn't conform to its ubiquitous language, instead it is intended to expose a protocol convenient for consumers. Hence, the public protocol is called the "published language".
 					
 #### 3. Separate Ways:
-    Creating its own specialized solution and not integrating with other Bounded Context. This makes sense when it’s less expensive to duplicate particular functionality than to collaborate and integrate it. Should be avoided when integrating core subdomains.
+> Creating its own specialized solution and not integrating with other Bounded Context. This makes sense when it’s less expensive to duplicate particular functionality than to collaborate and integrate it. Should be avoided when integrating core subdomains.
 				
 #### 4. Big Ball of Mud:
-    Building all the bounded contexts as a part of one single application. Ex - Legacy systems.
+> Building all the bounded contexts as a part of one single application. Ex - Legacy systems.
 
 				
 #### Types of Integrations:

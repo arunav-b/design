@@ -58,6 +58,7 @@ Integration of multiple bounded-contexts, i.e., how one bounded context maps to 
 #### 1. Cooperation:
     Cooperation patterns relate to bounded contexts implemented by teams with well-established communication. It applies to teams that have dependent goals, where the success of one team depends on the other’s and vice versa. These are of two types -
 - **Partnership:** In a partnership between 2 teams, each team is responsible for one Bounded-Context, each having a dependent set of goals. There is a commitment required between the two teams and they will succeed or fail together. Bounded contexts are integrated in an ad hoc manner.
+
 - **Shared Kernel:** A relationship with 2 teams, where they share a small but common model. The shared kernel is both referenced and owned by multiple bounded contexts. It is difficult to maintain. A shared kernel is a natural fit for integrating bounded contexts that are owned and implemented by the same team.
 					
 #### 2. Customer-Supplier:
@@ -132,6 +133,8 @@ We'll disucss 4 different ways to implement the business logic -
 	- Time machine
 	- Deep insight
 	- Audit log
+
+<br/> 
 				
 ### Architectural Patterns:
 We'll look at the following patterns -
@@ -158,6 +161,7 @@ Good fit for business logic implemented using domain model pattern. The core goa
 	    - Synchronous: Fetch changes to the OLTP data through the catch-up subscription model.
 	    - Asynchronous: Command execution model publishes all committed changes to a message bus. The system’s projection engines can subscribe to the published messages and use them to project the read models.
 		
+<br/>
 		
 ## Event Storming:
 Below are the steps for event storming -

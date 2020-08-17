@@ -25,9 +25,11 @@ Subdomain is a sub-part of your overall business domain, which are discovered du
 
 #### Types of Subdomains:
 
-- Core Domain: A core subdomain is what a company does differently from its competitors. This is the main well-defined domain where most of the investment of time and money goes in.
-- Supporting subdomain: Things that the company is doing differently from its competitors, but they do not provide a competitive edge. Custom development required for certain models to support the core domain bcoz off-the-shelf solutions doesn't exist.
-- Generic subdomain: Things that all companies do in the same way. This kind of solution may be available for purchase off the shelf but may also be outsourced or even developed in house by a team that doesn’t have the kind of elite developers that you assign to your Core Domain or even a lesser Supporting Subdomain. Eg - Logging Framework
+- **Core Domain**: A core subdomain is what a company does differently from its competitors. This is the main well-defined domain where most of the investment of time and money goes in.
+
+- **Supporting subdomain**: Things that the company is doing differently from its competitors, but they do not provide a competitive edge. Custom development required for certain models to support the core domain bcoz off-the-shelf solutions doesn't exist.
+
+- **Generic subdomain**: Things that all companies do in the same way. This kind of solution may be available for purchase off the shelf but may also be outsourced or even developed in house by a team that doesn’t have the kind of elite developers that you assign to your Core Domain or even a lesser Supporting Subdomain. Eg - Logging Framework
 
 <br/>
 		
@@ -35,6 +37,8 @@ Subdomain is a sub-part of your overall business domain, which are discovered du
 > - Subdomains are discovered, while bounded contexts are designed.
 > - Subdomains are already there in a business domain. They are just discovered during analysis phase.
 > - Choosing model boundaries (bounded-contexts) is a strategic design decision. We decide how to divide the business domain into smaller, manageable problem domains.
+
+<br/>
 		
 ### Context Mapping:
 Integration of multiple bounded-contexts, i.e., how one bounded context maps to another bounded context. 
@@ -51,30 +55,31 @@ Integration of multiple bounded-contexts, i.e., how one bounded context maps to 
                         |              |            |                     |                  |
                   Partnership  Shared Kernel   Conformist     Anti-Corruption Layer   Open Host Service 	
 
-##### Cooperation:
-Cooperation patterns relate to bounded contexts implemented by teams with well-established communication. It applies to teams that have dependent goals, where the success of one team depends on the other’s and vice versa. These are of two types -
+#### 1. Cooperation:
+    Cooperation patterns relate to bounded contexts implemented by teams with well-established communication. It applies to teams that have dependent goals, where the success of one team depends on the other’s and vice versa. These are of two types -
 - **Partnership:** In a partnership between 2 teams, each team is responsible for one Bounded-Context, each having a dependent set of goals. There is a commitment required between the two teams and they will succeed or fail together. Bounded contexts are integrated in an ad hoc manner.
 - **Shared Kernel:** A relationship with 2 teams, where they share a small but common model. The shared kernel is both referenced and owned by multiple bounded contexts. It is difficult to maintain. A shared kernel is a natural fit for integrating bounded contexts that are owned and implemented by the same team.
 					
-##### Customer-Supplier:
-Here one bounded-context is a supplier (upstream) of services and the other one being a consumer (downstream). Unlike in the cooperation case, both teams (upstream and downstream) can succeed independently. These can be broadly classified as -
+#### 2. Customer-Supplier:
+    Here one bounded-context is a supplier (upstream) of services and the other one being a consumer (downstream). Unlike in the cooperation case, both teams (upstream and downstream) can succeed independently. These can be broadly classified as -
 - **Conformist:** Here in a supplier-consumer relationship, the supplier simply supplies information/data to downstream teams without much motivation on what the downstream team needs. The donwstream team conforms to the upstream model. Eg - Industry-standard or well-established model that doesn't change frequently.
 
 - **Anticorruption Layer:** The downstream creates a translation layer between its Ubiquitous Language and the Ubiquitous Language of upstream. The layer isolates the downstream model from the upstream model and translates between the two. Eg - Legacy-Bridge - Consumer protects itself from frequent changes by supplier's contract.
 
 - **Open Host Service:** An Open Host Service defines a protocol or interface that gives access to the underlying Bounded Context as a set of services. The protocol is "open" hence allowing to integrate with other Bounded Contexts with relative ease. Supplier's public interface doesn't conform to its ubiquitous language, instead it is intended to expose a protocol convenient for consumers. Hence, the public protocol is called the "published language".
 					
-##### Separate Ways:
-Creating its own specialized solution and not integrating with other Bounded Context. This makes sense when it’s less expensive to duplicate particular functionality than to collaborate and integrate it. Should be avoided when integrating core subdomains.
+#### 3. Separate Ways:
+    Creating its own specialized solution and not integrating with other Bounded Context. This makes sense when it’s less expensive to duplicate particular functionality than to collaborate and integrate it. Should be avoided when integrating core subdomains.
 				
-##### Big Ball of Mud:
-Building all the bounded contexts as a part of one single application. Ex - Legacy systems.
+#### 4. Big Ball of Mud:
+    Building all the bounded contexts as a part of one single application. Ex - Legacy systems.
+
+<br/> 
 				
 #### Integration Types:
 - RPC with SOAP
 - Restful HTTP 
 - Messaging
-
 
 <br/> 
 			

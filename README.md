@@ -11,6 +11,8 @@ Strategic design can be broken into following steps:
 - b. Discovering domain knowledge by using a Ubiquitous language
 - c. Managing complexity with Bounded Contexts
 - d. Context Mapping
+
+<br/>
 	
 Some key concepts in Strategic Design -
 
@@ -38,8 +40,6 @@ Subdomain is a sub-part of your overall business domain, which are discovered du
 > - Subdomains are already there in a business domain. They are just discovered during analysis phase.
 > - Choosing model boundaries (bounded-contexts) is a strategic design decision. We decide how to divide the business domain into smaller, manageable problem domains.
 
-<br/>
-		
 ### Context Mapping:
 Integration of multiple bounded-contexts, i.e., how one bounded context maps to another bounded context. 
 

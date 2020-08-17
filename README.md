@@ -29,7 +29,8 @@ Subdomain is a sub-part of your overall business domain, which are discovered du
 - Supporting subdomain: Things that the company is doing differently from its competitors, but they do not provide a competitive edge. Custom development required for certain models to support the core domain bcoz off-the-shelf solutions doesn't exist.
 - Generic subdomain: Things that all companies do in the same way. This kind of solution may be available for purchase off the shelf but may also be outsourced or even developed in house by a team that doesn’t have the kind of elite developers that you assign to your Core Domain or even a lesser Supporting Subdomain. Eg - Logging Framework
 
-<br/>		
+<br/>
+		
 > **NOTE: (Subdomain vs Bounded-Context)**
 > - Subdomains are discovered, while bounded contexts are designed.
 > - Subdomains are already there in a business domain. They are just discovered during analysis phase.

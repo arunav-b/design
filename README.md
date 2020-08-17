@@ -177,3 +177,4 @@ Below are the steps for event storming -
 
 ## References:
 - [What is Domain Driven Design ?](https://learning.oreilly.com/library/view/what-is-domain-driven/9781492057802/)
+- [Martin Fowler on Domain Driven Design](https://martinfowler.com/tags/domain%20driven%20design.html)

@@ -1,5 +1,7 @@
 # Designing Software
 
+<br/>
+
 ## Strategic vs Tactical Design:
 
 - Prioritize design based on - Value & Impact
@@ -20,6 +22,7 @@
 - Develop a prototype, make changes to it as we evolve and know more along the journey.
 - Architecture will also evolve as we go along.
 
+<br/> 
 
 ## Design by Contract vs Design by Capability:
 
